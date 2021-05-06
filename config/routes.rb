@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/all_product_path", controller: "products", action: "all_product_method"
+  get "/first_product_path", controller: "products", action: "first_product_method"
 end
