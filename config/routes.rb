@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # PRODUCTS
   get "/products", controller: "products", action: "index"
 
   post "/products", controller: "products", action: "create"
@@ -9,4 +10,7 @@ Rails.application.routes.draw do
 
   delete "/products/:id", controller: "products", action: "destroy"
 
+  # SUPPLIERS
+
+  get "/suppliers", controller: "suppliers", action: "index"
 end
