@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
   
   belongs_to :supplier
+  has_many :images #array of image objects
   
   def supplier_name
     supplier.name

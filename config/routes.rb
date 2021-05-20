@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   # SUPPLIERS
 
   get "/suppliers", controller: "suppliers", action: "index"
+
+  # Users
+  post "/users" => "users#create"
 end
