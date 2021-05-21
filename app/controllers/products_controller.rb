@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    products = Product.where("name iLIKE ?" , "#{params[:search]}%")
+    products = Product.all
     render json: products
     
   end

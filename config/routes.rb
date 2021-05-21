@@ -15,5 +15,8 @@ Rails.application.routes.draw do
   get "/suppliers", controller: "suppliers", action: "index"
 
   # Users
-  post "/users" => "users#create"
+  post "/users", controller: "users", action: "create"
+
+  # Sessions
+  post "/sessions", controller: "sessions", action: "create"
 end

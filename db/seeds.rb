@@ -23,4 +23,5 @@ Image.create!([
   {url: "https://secureservercdn.net/45.40.145.201/7ge.8d4.myftpupload.com/wp-content/uploads/2021/01/ysl_2.jpg", product_id: 4},
   {url: "https://secureservercdn.net/45.40.145.201/7ge.8d4.myftpupload.com/wp-content/uploads/2021/01/signature_3.jpg", product_id: 3},
   {url: "https://secureservercdn.net/45.40.145.201/7ge.8d4.myftpupload.com/wp-content/uploads/2021/01/LVPatent-2.jpg", product_id: 2}, 
-  {url: "https://secureservercdn.net/45.40.145.201/7ge.8d4.myftpupload.com/wp-content/uploads/2021/01/3827._Border-937x1024.jpg", product_id: 1}])
+  {url: "https://secureservercdn.net/45.40.145.201/7ge.8d4.myftpupload.com/wp-content/uploads/2021/01/3827._Border-937x1024.jpg", product_id: 1},
+  {url: "https://secureservercdn.net/45.40.145.201/7ge.8d4.myftpupload.com/wp-content/uploads/2021/01/0250.jpg", product_id: 9}])
