@@ -6,17 +6,22 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product = Product.new(
-      name: params[:name],
-      price: params[:price],
-      description: params[:description],
-      supplier_id: params[:supplier_id],
-      total_inventory: params[:total_inventory]
-    )
-    if product.save
-      render json: product
+    if current_user
+      product = Product.new({
+        name: params[:name],
+        price: params[:price],
+        description: params[:description],
+        supplier_id: params[:supplier_id],
+        total_inventory: params[:total_inventory],
+        user_id: current_user.id
+      })
+      if product.save
+        render json: product
+      else
+        render json: {errors: product.errors.full_messages}, status: :unprocessable_entity
+      end
     else
-      render json: {errors: product.errors.full_messages}, status: :unprocessable_entity
+      render json: {message: "You must be logged in to do that"}, status: :unauthorized
     end
   end
 

@@ -1,0 +1,29 @@
+create an orders controller.
+
+make a orders create route
+
+orders create method for orders with product_id, quantity, user id from current user
+
+have a create post request to allow user to enter a form with product id and quantity parameters
+include happy sad paths and render order object with serializer
+
+associate orders with users in rails
+
+have authorization header on front end with Authorization and Bearer"key"
+
+allow users to see orders with index actions.
+
+
+
+Write a function that takes in an array of numbers and returns a new array of the same numbers without any duplicates.
+
+Begin with an array of numbers
+write a function to put those numbers in a new variable
+write a function to map those numbers to find out if there are duplicates to begin with.
+write a function to place those duplicates in a new variable
+write a function to get rid of all but one of these numbers
+write a function to place that number with all other numbers in 
+
+
+
+
