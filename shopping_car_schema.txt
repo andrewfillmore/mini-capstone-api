@@ -1,0 +1,33 @@
+create table for carted_products => make status default "carted"
+rails g model CartedProduct product_id:integer user_id:integer order_id:integer status:string quantity:integer
+migrate to make the table
+carted_products controller rails g controller carted_products
+create migration to remove quanitity and product_id from orders
+add seed data for carted_products (data to see if created in postico)
+
+in carted_product model store associations:
+belongs_to: product
+belongs_to: user
+belongs_to:order, optional: true
+
+in orders model add associations:
+has_many :carted_products
+has_many :products, through: :carted_products
+
+in user model add associations:
+has_many :carted_products
+
+in product model add associations:
+has_many :carted_products
+has_many :orders through: :carted_products
+test in rails console
+restful index route to view all carted products => route, show just carted products for current user where status is carted
+test in insomnia with authorization header
+restful create route to create a carted product => user passes quantity and product_id
+update carted_product
+
+change orders create action
+
+
+
+
